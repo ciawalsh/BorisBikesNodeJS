@@ -1,9 +1,12 @@
 function Station() {
 	this.count = []
+	this.capacity = 10;
 };
 
 Station.prototype.dock = function(bike) {
-	this.count.push(bike);
+	if (this.count.length < this.capacity) {
+		this.count.push(bike);
+	}
 };
 
 Station.prototype.release = function(bike) {
