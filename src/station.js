@@ -7,7 +7,9 @@ Station.prototype.dock = function(bike) {
 };
 
 Station.prototype.release = function(bike) {
-	this.count.pop(bike);
+	if (bike.broken === false) {
+		this.count.pop(bike);
+	}
 };
 
 module.exports = Station;

@@ -33,5 +33,21 @@ describe("Station", function() {
 
 	});
 
+	describe("Capacity", function(){
+
+		var dockElevenBikes = function(station, bike){
+			for(i = 0; i < 11; i++){
+				station.dock(bike);
+			}
+
+		};
+
+		it("Has a capacity of 10", function(){
+			dockElevenBikes(station, bike);
+			expect(station.count.length).toEqual(10);
+		});
+
+	});
+
 
 });
