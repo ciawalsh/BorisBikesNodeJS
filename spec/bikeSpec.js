@@ -29,6 +29,11 @@ describe("Bike", function(){
 			expect(bike.broken).toBe(false);
 		});
 
+		it("Can be docked", function() {
+			bike.dock();
+			expect(station.count()).toEqual(1);
+		});
+
 	});
 
 });
