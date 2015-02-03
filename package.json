@@ -1,0 +1,22 @@
+{
+  "name": "BorisBikesNodeJS",
+  "version": "0.0.0",
+  "description": "boris bikes",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node spec/ --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kierangoodacre/BorisBikesNodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kierangoodacre/BorisBikesNodeJS/issues"
+  },
+  "homepage": "https://github.com/kierangoodacre/BorisBikesNodeJS",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
